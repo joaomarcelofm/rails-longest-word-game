@@ -1,0 +1,15 @@
+<h1>Time to play words game</h1>
+
+<%= @grid.join(" | ") %>
+
+<br>
+<br>
+
+<form action="/score">
+  <label for="question">Enter your attempt</label>
+  <input type="hidden" name="start_time" value="<%= Time.now.to_i %>">
+  <input type="hidden" name="grid_score" value="<%= @grid.join %>">
+  <input type="text" id="question" name="query">
+  <input type="submit" value="Go on!">
+</form>
+

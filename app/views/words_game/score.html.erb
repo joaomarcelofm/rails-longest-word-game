@@ -1,0 +1,18 @@
+<h1>Your score is:</h1>
+
+
+<%= @attempt %>
+
+<br>
+<br>
+
+<%= @result[:score] %>
+<br>
+<%= @result[:message] %>
+<br>
+You took <%= @result[:time] %> seconds to submit the attempt
+
+<br>
+<br>
+
+<%= link_to "Play again", "/game" %>
